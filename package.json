@@ -1,0 +1,35 @@
+{
+  "name": "usopp",
+  "version": "1.0.0",
+  "description": "usopp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jackiecookie/Usopp.git"
+  },
+  "keywords": [
+    "koa2"
+  ],
+  "author": "jackiecookie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackiecookie/Usopp/issues"
+  },
+  "homepage": "https://github.com/jackiecookie/Usopp#readme",
+  "dependencies": {
+    "koa": "^2.0.0",
+    "toshihiko": "^0.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-3": "^6.11.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9"
+  }
+}
