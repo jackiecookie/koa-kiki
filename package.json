@@ -21,6 +21,7 @@
   "homepage": "https://github.com/jackiecookie/Usopp#readme",
   "dependencies": {
     "koa": "^2.0.0",
+    "koa-router": "^5.4.0",
     "toshihiko": "^0.8.3"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "babel-preset-stage-3": "^6.11.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.9"
+    "gulp-watch": "^4.3.9",
+    "koa-handlebars-pdh": "^1.0.0"
   }
 }
