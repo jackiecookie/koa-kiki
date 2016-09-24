@@ -15,6 +15,7 @@ app
 
 router.get('/test', function *(next) {
     this.body='first test';
+
     yield next;
 });
 
