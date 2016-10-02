@@ -15,6 +15,8 @@ app.use(async function (ctx, next) {
     console.log('<< two');
 });
 
+
+
 app.use(async function (ctx, next) {
     console.log('>> three');
     await next();
