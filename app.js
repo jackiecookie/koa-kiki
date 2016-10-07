@@ -1,24 +1,17 @@
+import Koa from 'koa';
 
-var Koa = require('koa');
+const hbs = require('koa-kiki-handlebars');
+
 const app = new Koa();
 
-app.use(async function (ctx, next) {
-    console.log('>> one');
-    await next();
-    console.log('<< one');
+const router = require('koa-kiki-router')(app, {
+    root: './app/controller'
 });
+router.register();
 
-app.use(async function (ctx, next) {
-    console.log('>> two');
-    ctx.body = 'two';
-    await next();
-    console.log('<< two');
-});
+app
+    .use(hbs({
+        root: './app/views'
+    }));
 
-app.use(async function (ctx, next) {
-    console.log('>> three');
-    await next();
-    console.log('<< three');
-});
-
-app.listen(3000);
+app.listen(30010);

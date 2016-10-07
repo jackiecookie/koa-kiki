@@ -14,7 +14,7 @@ var path={
 gulp.task('sass',function () {
     return gulp.src(path.scss).
         pipe(sass().on('error',sass.logError)).
-        pipe(gulp.dest('./css'))
+        pipe(gulp.dest('../statics/css'))
 })
 
 gulp.task('watch',function(){
