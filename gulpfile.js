@@ -1,6 +1,4 @@
-/**
- * Created by wspandihai on 9/20/16.
- */
+
 var gulp=require('gulp');
 
 var sass=require('gulp-sass');

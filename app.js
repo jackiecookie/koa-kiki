@@ -1,17 +1,18 @@
 import Koa from 'koa';
 
-const hbs = require('koa-kiki-handlebars');
-
+import hbs from 'koa-kiki-handlebars'
 const app = new Koa();
+
+
+app.use(hbs({
+    root: './app/views'
+}));
+
 
 const router = require('koa-kiki-router')(app, {
     root: './app/controller'
 });
 router.register();
 
-app
-    .use(hbs({
-        root: './app/views'
-    }));
 
 app.listen(30010);
